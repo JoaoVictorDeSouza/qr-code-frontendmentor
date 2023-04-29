@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root{
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 10vh;
+    box-sizing: border-box;
+    background-color: #7286D3;
+}
+
+.conteudo{
+    background-color: #FFF2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin: 2% 25%;
+    position: relative;
+}
+
+.conteudo__principal{
+    width: 380px;
+    margin: 2% auto;
+    border-radius: 20px;
+}
+
+.conteudo__texto {
+    display: block;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    font-size: 20px;
+    width: 80%;
+}
+
+.informacoes {
+    display: block;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 17px;
+    width: 80%;
+}
+
+.rodape{
+    display: block;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    padding: 4%;
+    font-weight: 400;
+}
+
+.rodape__link-desafio{
+    text-decoration: underline;
+    color: #000000;
+}
+
+.rodape__link-dev{
+    text-decoration: underline;
+    color: #000000;
+}
+
+@media (max-width: 1080px){
+    .conteudo{
+        padding-bottom: 22px;
+    }
+}
+
+@media (max-width: 800px){
+    .main{
+        gap: 20px;
+    }
+    .conteudo{
+        margin: auto;
+        padding-top: 15px;
+        width: 250px;
+        height: 86vh;
+        gap: 40px;
+    }
+    .conteudo__principal{
+        width: 200px;
+    }
+}
